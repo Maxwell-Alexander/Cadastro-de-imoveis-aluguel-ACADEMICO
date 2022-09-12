@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/5a9e0298a0.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <title>Cadastro de imóveis</title>
+</head>
+
+<body>
+
+    <div class="conteiner_main">
+        <div class="conteiner_form">
+            <form onsubmit="cadastrar()">
+                <legend>Cadastro de Imovéis</legend>
+
+                <label for="area">Área m²:</label>
+                <input type="number" min="0" id="area" required>
+         
+
+                <label for="tipo_imovel">Tipo:</label>
+                <select name="tipo_imovel" id="tipo_imovel">
+                    <option value="casa" selected>Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                </select>
+              
+                <p class="desc_radio">Alugado?</p>
+
+                <input type="radio" id="alugado_sim" value="sim" name="aluguel">
+                <label for="alugado_sim">Sim</label>
+                <br>
+                <input type="radio" id="alugado_nao" value="nao" name="aluguel">
+                <label for="alugado_nao">Não</label>
+
+                <br>
+                <button type="submit" id="bto_cadastrar">Enviar</button>
+            </form>
+        </div>
+        <div class="conteiner_dados">
+            <ul id="lista"></ul>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

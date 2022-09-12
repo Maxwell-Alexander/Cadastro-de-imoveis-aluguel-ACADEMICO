@@ -1,0 +1,1 @@
+Simples cadastro de imóveis com status de aluguel SIM ou NÃO, para fins acadêmicos.
